@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Aula JS - Questão 6</title>
+    <script type="text/javascript">
+      var N = parseInt(prompt("Digite um número inteiro: "));
+      var resultado = "";
+      for (var i = 2; i <= N; i++) {
+        var isPrime = true;
+        for (var j = 2; j < i; j++) {
+          if (i % j === 0) {
+            isPrime = false;
+            break;
+          }
+        }
+        if (isPrime) {
+          resultado += i + " ";
+        }
+      }
+      alert("Os números primos 1 a " + N + " são: " + resultado);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+  <head>
+    <title>Aula JS - Questão 10</title>
+  </head>
+  <body>
+    <script>
+      let numero;
+      let soma = 0;
+      let quantidade = 0;
+      let maior = null;
+      let menor = null;
+      while (true) {
+        numero = parseInt(
+          prompt("Digite um número inteiro (0 para encerrar):"),
+        );
+        if (numero === 0) {
+          break;
+        }
+        soma += numero;
+        quantidade++;
+        if (maior === null || numero > maior) {
+          maior = numero;
+        }
+
+        if (menor === null || numero < menor) {
+          menor = numero;
+        }
+      }
+      let media = soma / quantidade;
+      let resultado =
+        "Soma: " +
+        soma +
+        "\nMédia: " +
+        media +
+        "\nMaior número: " +
+        maior +
+        "\nMenor número: " +
+        menor;
+
+      alert(resultado);
+      console.log(resultado);
+    </script>
+  </body>
+</html>

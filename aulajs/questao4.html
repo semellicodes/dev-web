@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Aula JS - Questão 4</title>
+    <script type="text/javascript">
+    let temperatura = parseFloat(prompt("Digite a temperatura:"));
+    let opcao = prompt(
+    "Digite a conversão desejada:\n" +
+    "C - Celsius para Fahrenheit\n" +
+    "F - Fahrenheit para Celsius"
+);
+    let resultado;
+    if (opcao.toUpperCase() === "C") {
+  resultado = (temperatura * 9/5) + 32;
+  alert(temperatura + "°C equivalem a " + resultado.toFixed(2) + "°F");
+}
+    else if (opcao.toUpperCase() === "F") {
+    resultado = (temperatura - 32) * 5/9;
+    alert(temperatura + "°F equivalem a " + resultado.toFixed(2) + "°C");
+}
+    else {
+    alert("Opção inválida!");
+}
+    </script>
+  </head>
+  <body>
+    </script>
+  </body>
+</html>

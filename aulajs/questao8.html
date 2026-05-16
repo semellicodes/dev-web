@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Aula JS - Questão 8</title>
+    <script type="text/javascript">
+      var continuar = "s";
+      var maioresIdade = 0;
+      var menoresIdade = 0;
+
+      while (continuar == "s") {
+        var nome = prompt("Digite o nome da pessoa:");
+        var idade = parseInt(prompt("Digite a idade da pessoa:"));
+        if (idade >= 18) {
+          maioresIdade++;
+          alert(nome + " é maior de idade.");
+          console.log(nome + " é maior de idade.");
+        } else {
+          menoresIdade++;
+          alert(nome + " é menor de idade.");
+          console.log(nome + " é menor de idade.");
+        }
+        continuar = prompt(
+          "Deseja cadastrar outra pessoa? (s/n)",
+        ).toLowerCase();
+      }
+      alert(
+        "Quantidade de maiores de idade: " +
+          maioresIdade +
+          "\nQuantidade de menores de idade: " +
+          menoresIdade,
+      );
+      console.log("Quantidade de maiores de idade: " + maioresIdade);
+      console.log("Quantidade de menores de idade: " + menoresIdade);
+      alert("Programa encerrado.");
+    </script>
+  </head>
+
+  <body></body>
+</html>
