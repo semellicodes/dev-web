@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aula CSS - Questão 7</title>
+
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+
+      #tabela-dados {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+      }
+
+      #tabela-dados th,
+      #tabela-dados td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+      }
+
+      #tabela-dados th {
+        background-color: darkblue;
+        color: white;
+      }
+
+      #tabela-dados tr:nth-child(even) {
+        background-color: #e6e6e6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Tabela de Dados</h1>
+
+    <table id="tabela-dados">
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Cidade</th>
+      </tr>
+
+      <tr>
+        <td>Paula</td>
+        <td>23</td>
+        <td>Belém</td>
+      </tr>
+
+      <tr>
+        <td>Mellynda</td>
+        <td>20</td>
+        <td>Capitão Poço</td>
+      </tr>
+
+      <tr>
+        <td>Paulo</td>
+        <td>52</td>
+        <td>São Domingos do Capim</td>
+      </tr>
+    </table>
+  </body>
+</html>
